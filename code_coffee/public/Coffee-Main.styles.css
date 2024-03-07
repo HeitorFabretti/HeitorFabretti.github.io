@@ -1,0 +1,123 @@
+* {
+    margin: 0px;
+    list-style: none;
+    text-decoration: none;
+}
+
+header {
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #A99C8B;
+}
+
+header img {
+    margin-left: 50%;
+    width: 75px;
+    height: 75px;
+}
+
+header a ol {
+    margin-right: 35px;
+    margin-top: 15px;
+}
+
+header a ol li {
+    border-radius: 3px;
+    background-color: #fffF;
+    transition: transform 300ms ease;
+    width: 25px;
+    height: 3px;
+    margin: 3px
+}
+
+header a {
+    z-index: 1;
+    transition: transform 300ms ease
+}
+
+header a:hover {
+    transform: scale(1.4) translateY(15%) translateX(-10%);
+}
+
+#navigation_opening {
+    position: fixed;
+    width: 20%;
+    height: 100%;
+    left: 80%;
+    top: 0px;
+    background-color: #3B2F21;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform 300ms ease; 
+}
+
+body::before {
+    content: "";
+    width: 800px;
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.5)
+}
+
+#navigation_opening ul {
+    position: fixed;
+    margin-top: 50%;
+    margin-left: 20%
+    
+}
+
+#Navigation-Two {
+    background-color: #3B2F21;
+}
+
+#navigation_opening ul li {
+    margin-bottom: 20px;
+    border: 2px #3D1F00 solid;
+    background-color: #fff;
+    height: 50px;
+    width: 110px;
+    border-radius: 10px;
+    font-weight: 900;
+    box-shadow: 8px 8px #3D1F00;
+    transition: box-shadow 300ms ease;
+}
+
+#navigation_opening ul li:hover {
+    box-shadow: 0px 0px #3D1F00
+}
+
+#navigation_opening ul li a {
+    position: fixed;
+    color: #3D1F00;
+    z-index: 3;
+    margin-top: 15px;
+    margin-left: 30px;
+    transition: color 300ms ease
+}
+
+#navigation_opening ul li:hover a {
+    color: #fff;
+    transform: none
+}
+
+
+#navigation_opening ul li::before {
+    left: 93px;
+    position: fixed;
+    content: "";
+    inset: 1;
+    height: 50px;
+    width: 110px;
+    background-color: #4F2A00;
+    border: 3px solid #3D1F00;
+    border-radius: 10px;
+    z-index: 2;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 300ms ease
+}
+
+#navigation_opening ul li:hover::before {
+    transform: scaleX(1);
+}
